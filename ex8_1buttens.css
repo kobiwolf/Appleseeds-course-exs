@@ -1,0 +1,104 @@
+body{
+    background-color: rgba(12, 15, 235, 0.918);
+    text-align: center  ;
+}
+h2{
+    color: #ffffff;
+    padding: 5px;
+}
+button{
+    display: inline-block;
+    margin:15px 25px;
+    color: #ffffff;
+}
+#gf,#or,#gfg,#org{
+    padding: 25px 45px;
+}
+#yr,#rfg,#yrg,#rf{
+    padding:15px 35px;
+}
+#bf,#greyr,#bfg,#greyrg{
+    padding:5px 25px;
+}
+#gf{
+    background-color: green;
+}
+#gf:hover{
+    background-color:rgba(0, 255, 21, 0.658);
+}
+#rf{
+    background-color: red;
+}
+#rf:hover{
+    background-color: rgba(255, 0, 0, 0.575);
+}
+#bf{
+    background-color: blue;
+}
+#bf:hover{
+    background-color: rgba(0, 0, 255, 0.315);
+}
+.round{
+    border-radius: 10px;
+}
+#or{
+    background-color: orange;
+}
+#or:hover{
+    background-color: rgba(255, 166, 0, 0.74);
+}
+#yr{
+    background-color: yellow;
+}
+#yr:hover{
+    background-color: rgba(255, 255, 0, 0.705);
+}
+#greyr{
+    background-color: grey;
+}
+#greyr:hover{
+    background-color: rgba(128, 128, 128, 0.5);
+}
+.flatg{
+    background-color: blue;
+}
+#gfg{
+    border:rgb(1, 255, 1) solid 4px
+}
+#gfg:hover{
+    background-color: rgb(1, 255, 1);
+}
+#rfg{
+    border:red 3px solid
+}
+#rfg:hover{
+   background-color: red;
+}
+#bfg{
+    border: darkblue 3px solid;
+}
+#bfg:hover{
+    background-color: darkblue;
+}
+.rg{
+    border-radius: 3px;
+    background-color: blue;
+}
+#org{
+    border: orange 1px solid;
+}
+#org:hover{
+    background-color: orange;
+}
+#yrg{
+    border:yellow 1px solid;
+}
+#yrg:hover{
+    background-color: yellow;
+}
+#greyrg{
+    border: grey 1px solid;
+}
+#greyrg:hover{
+    background-color:grey;
+}
