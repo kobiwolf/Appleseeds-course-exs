@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #first{
     font-size: 19px;
     border: red 1px solid;
@@ -11,4 +12,19 @@
     background: black;
     color:white;
     font-family: monospace;
+=======
+#first{
+    font-size: 19px;
+    border: red 1px solid;
+    border-radius: 5px;
+}
+#second{
+    font-weight: bold;
+    font-style: italic;
+}
+#third{
+    background: black;
+    color:white;
+    font-family: monospace;
+>>>>>>> c8195399c61a42ba8e60bb6f969039fa7ae21fe5
 }
