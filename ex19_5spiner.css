@@ -33,7 +33,6 @@ body > div {
 }
 .noround {
   border-radius: 50%;
-  border: green 5px solid;
   background-color: black;
   border-top: blue 5px solid;
   animation: noround;
@@ -41,7 +40,6 @@ body > div {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-fill-mode: backwards;
-  border: 5px black solid;
   border-top: 5px green solid;
 }
 @keyframes noround {

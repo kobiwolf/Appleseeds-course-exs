@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+
+.grid > div {
+  border-radius: 15px;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.grid {
+  height: 100vh;
+  grid-gap: 25px;
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "side-bar content1 content1 side-bar2  "
+    "side-bar  content1 content1  side-bar2 "
+    "footer footer footer footer";
+}
+@media screen and (max-width: 1200px) {
+  .grid {
+    grid-gap: 12px;
+    grid-template-areas:
+      "header header header"
+      "side-bar content1 content1"
+      "side-bar content1 content1"
+      "side-bar2 side-bar2 side-bar2"
+      "footer footer footer";
+  }
+}
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-gap: 5px;
+    grid-template-areas:
+      "header"
+      "side-bar"
+      "content1"
+      "content1"
+      "side-bar2"
+      "footer";
+  }
+}
+
+.box1 {
+  background-color: red;
+  grid-area: header;
+}
+.box2 {
+  background-color: blue;
+  grid-area: side-bar;
+}
+.box3 {
+  background-color: green;
+  grid-area: content1;
+}
+.box4 {
+  background-color: darkcyan;
+  grid-area: side-bar2;
+}
+.box5 {
+  background-color: orange;
+  grid-area: footer;
+}
