@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  --priam-color: rgba(9, 45, 70, 0.178);
+  --second-color: rgb(29, 67, 82);
+  background-color: var(--priam-color);
+  color: var(--second-color);
+  margin: auto;
+  max-width: fit-content;
+  position: relative;
+}
+
+p {
+  font-style: oblique;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+}
+#div-img {
+  box-shadow: 5px 5px 5px rgba(34, 79, 97, 0.486);
+  max-width: 300px;
+  margin: 10px auto;
+}
+#profile-img {
+  max-width: 300px;
+}
+#list-conect {
+  border: var(--second-color) 2px solid;
+  width: 100px;
+  background-color: var(--second-color);
+  border-radius: 3px;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+.conect {
+  border: 1px solid black;
+  border-radius: 4px;
+  max-width: 170px;
+  background-color: rgb(41, 97, 119);
+  text-align: center;
+  color: white;
+  font-style: italic;
+}
+#fb-conect {
+  float: left;
+}
+#github-conect {
+  float: left;
+  margin-left: 220px;
+}
+#email-conect {
+  float: right;
+}
+.navbut {
+  padding: 10px 15px 10px 0px;
+  margin: none;
+  background-color: var(--second-color);
+  color: white;
+  border: none;
+  font-style: italic;
+}
+.navbut:hover {
+  background-color: rgb(54, 132, 163);
+}
+#navgudie {
+  background-color: var(--second-color);
+  border-radius: 10px;
+  padding-left: 10px;
+}
+#first-card,
+#second-card {
+  width: 200px;
+  border: 1px solid black;
+}
+#clear {
+  clear: both;
+}
+#second-card {
+  float: right;
+  margin-right: 100px;
+}
+#first-card {
+  float: left;
+  margin-left: 100px;
+}

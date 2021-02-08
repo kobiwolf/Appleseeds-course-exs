@@ -1,0 +1,26 @@
+body{
+    background-color:rgb(153, 148, 119);
+    color:mediumblue;
+    margin: auto;
+    max-width: fit-content;
+}
+p{
+    font-style: oblique;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
+#div-img{
+    box-shadow: 5px 5px 5px rgb(0, 47, 255);
+    max-width: 300px;
+    
+}
+#profile-img{
+    max-width: 300px;
+}
+#list-conect{
+    border: rgb(0, 47, 255) 2px solid;
+    width: 100px;
+    background-color:seashell;
+    border-radius: 3px;
+    
+}
