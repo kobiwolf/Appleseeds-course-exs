@@ -1,0 +1,41 @@
+.boxes{
+    border: 3px solid black;
+    font-size: 25px;
+    background-color: white;
+
+}
+#box1{
+    width:200px ;
+    height:200px;
+    position: absolute; ;
+    z-index:1 ;
+
+}
+#box2{
+    width:100px ;
+    height:300px ;
+    z-index:2 ;
+    position: absolute;
+    top: 120px;
+    left:120px
+
+}
+#box3{
+    width:400px ;
+    height:100px ;
+    position: absolute; 
+    top:250px;
+    z-index:3 ;
+
+}
+#box4{
+    width:100px ;
+    height:500px ;
+    position: absolute; ;
+    z-index:4 ;
+    top:8px;
+    left:300px ;
+
+}
+
+
