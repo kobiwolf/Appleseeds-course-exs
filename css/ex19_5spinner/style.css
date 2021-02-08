@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  height: 100vh;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+}
+body > div {
+  margin: 50px;
+  width: 150px;
+  height: 150px;
+}
+.round {
+  border-radius: 50%;
+  border: green 5px solid;
+  background-color: black;
+  border-top: blue 5px solid;
+  animation-name: round;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+@keyframes round {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.noround {
+  border-radius: 50%;
+  background-color: black;
+  border-top: blue 5px solid;
+  animation: noround;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+  border-top: 5px green solid;
+}
+@keyframes noround {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.load {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+}
+.dot {
+  margin: 0px;
+  height: 10px;
+  width: 10px;
+  background-color: blue;
+  border-radius: 50%;
+}
+#dot1 {
+  animation: firstdot 1.5s linear 0s infinite backwards;
+}
+#dot2 {
+  animation: secondot 1.5s linear 0s infinite backwards;
+}
+#dot3 {
+  animation: thirdtdot 1.5s linear 0s infinite backwards;
+}
+@keyframes firstdot {
+  25% {
+    background-color: green;
+  }
+  50%,
+  100% {
+    background-color: blue;
+  }
+}
+@keyframes secondot {
+  50% {
+    background-color: green;
+  }
+
+  75%,
+  100% {
+    background-color: blue;
+  }
+}
+@keyframes thirdtdot {
+  100% {
+    background-color: green;
+  }
+}
+#dot4 {
+  animation: dot-4 1s linear 0s infinite backwards;
+}
+#dot5 {
+  animation: dot-5 1s linear 0s infinite backwards;
+}
+#dot6 {
+  animation: dot-6 1s linear 0s infinite backwards;
+}
+@keyframes dot-4 {
+  25% {
+    transform: translateY(-25px);
+  }
+  50%,
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes dot-5 {
+  50% {
+    transform: translateY(-25px);
+  }
+
+  75%,
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes dot-6 {
+  100% {
+    transform: translateY(-25px);
+  }
+}

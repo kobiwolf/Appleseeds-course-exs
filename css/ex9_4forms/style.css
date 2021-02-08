@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(19, 19, 161);
+}
+#signup{
+    background-color: whitesmoke;
+    width:450px;
+    margin: auto;
+    box-shadow: 3px 3px 3px rgb(1, 1, 128);
+    border-radius: 5px;
+    line-height:1.7em;
+    padding: 10px;
+}
+h1,h2{
+    text-align: center;
+    color: black;
+    font-style: oblique;
+    padding-top: 20px 
+}
+label{
+    display: block;
+    font-size: 25px;
+    
+
+}
+input{
+    width:70%;
+    padding: 10px;
+    border-radius: 5px;
+}
+button{
+    display:block;
+    margin:5px auto;
+    width:200px;
+    padding: 5px;
+    background-color: rgba(0, 128, 0, 0.658);
+}
+div p{
+    text-align: center;
+}
+button:hover{
+    background-color:rgba(0, 128, 0, 0.836) ;
+}
+#already{
+    text-align: center;
+    color: white;
+}
+a{
+    color: rgb(90, 90, 235);
+}
