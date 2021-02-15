@@ -1,9 +1,12 @@
-function findDifference(a, b) {
-  return a[0] * a[1] * a[2] - b[0] * b[1] * b[2] > 0
-    ? a[0] * a[1] * a[2] - b[0] * b[1] * b[2]
-    : b[0] * b[1] * b[2] - a[0] * a[1] * a[2];
-}
-let a = [1, 2, 5, 3, 4];
-a.forEach((value, key, arr) => {
-  return value + 1 !== arr[key + 1] ? arr[key + 1] : '';
-});
+let a = [1, 2, 6, 3, 4];
+// let tester = '';
+// function firstNonConsecutive(a) {
+//   for (let i = 0; i < a.length - 1; i++) {
+//     tester ? '' : a[i] + 1 !== a[i + 1] ? (tester = a[i + 1]) : '';
+//   }
+// }
+// console.log(tester);
+a.fill(4, 1, 3);
+console.log(a);
+let b = Array(3).fill(8);
+console.log(b);
