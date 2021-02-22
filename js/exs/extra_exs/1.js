@@ -67,7 +67,7 @@ function checkEmail(email) {
 }
 //10
 function checkPass(pass) {
-  let a = /\d.\d.\d/;
+  let a = /\d{3}/;
   let b = /[a-z]/;
   let c = /[A-Z].[A-Z]/;
   if (a.test(pass) && b.test(pass) && c.test(pass)) return true;
@@ -94,6 +94,7 @@ function aba(poly) {
   }
   return true;
 }
+js;
 console.log(aba(1232));
 //13
 function polyNum(num) {
@@ -101,9 +102,9 @@ function polyNum(num) {
   return num.join('') === num.reverse().join('') ? true : false;
 }
 console.log(polyNum(1221));
-//14
-function countChar(string) {
-  let obj = countABC(string);
-  console.log(obj);
-}
-countChar('hi');
+// //14
+// function countChar(string) {
+//   let obj = countABC(string);
+//   console.log(obj);
+// }
+// countChar('hi');
