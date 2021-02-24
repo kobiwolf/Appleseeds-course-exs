@@ -1,37 +1,52 @@
-// let out = function () {
-//   let a = 0;
-//   return function inner() {
-//     a++;
-//     console.log(a);
-//   };
-// };
-// let a = out();
-// a(); //1
-// a(); //2
-// a(); //3
-// a(); //4
-// let b = out();
-// b(); //1
-// a(); //5
-// let c = a;
-// c(); //6
-// a(); //7
-
-// function myFunc() {
-//   let i;
-//   const funcs = [];
-//   for (i = 0; i < 3; i++) {
-//     console.log(i);
-//     const log = () => {
-//       return `i is: ${i}`;
-//     };
-//     funcs.push(log);
-//   }
-//   return funcs;
-// }
-// const logs = myFunc();
-// console.log(logs[0](), logs[1](), logs[2]());
-
-console.log(a);
-let a = 1;
-function name(params) {}
+function validBraces(braces) {
+  oCurly = [];
+  cCurly = [];
+  oSquare = [];
+  cSquare = [];
+  oCircle = [];
+  cCircle = [];
+  braces.split('').forEach((v, i) => {
+    switch (v) {
+      case '{':
+        oCurly.push(i);
+        break;
+      case '}':
+        cCurly.push(i);
+        break;
+      case '(':
+        oCircle.push(i);
+        break;
+      case ')':
+        cCircle.push(i);
+        break;
+      case '[':
+        oSquare.push(i);
+        break;
+      case ']':
+        cSquare.push(i);
+        break;
+    }
+  });
+  if (
+    oCircle.length !== cCircle.length ||
+    oSquare.length !== cSquare.length ||
+    oCurly.length !== cCurly.length
+  ) {
+    return false;
+  }
+  function checkDistance(open, close, name) {
+    open.forEach((v, i) => {
+      if ((close[i] - v) % 2 !== 0) {
+        return false;
+      }
+    });
+  }
+  if (
+    !checkDistance(oCircle, cCircle, 'circle') ||
+    !checkDistance(oSquare, cSquare, 'square') ||
+    !checkDistance(oCurly, cCurly, 'curly')
+  )
+    return false;
+  return true;
+}
+console.log(validBraces('{}[]()'));

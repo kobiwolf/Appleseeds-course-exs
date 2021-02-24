@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        width: 300px;
+        height: 300px;
+        background-color: lightgray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .digit {
+        font-size: 40px;
+        color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <p class="digit" id="hour">00</p>
+      :
+      <p class="digit" id="minutes">00</p>
+      :
+      <p class="digit" id="seconds">00</p>
+      <button class="start">start</button>
+      <button class="stop">stop</button>
+    </div>
+    <button class="reset">reset</button>
+    </div>
+    <script src="./23_2stopW.js"></script>
+  </body>
+</html>

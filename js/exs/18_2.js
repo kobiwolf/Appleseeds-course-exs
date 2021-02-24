@@ -39,7 +39,7 @@ let list = document.createElement('ul');
 list.style.listStyle = 'none';
 list.style.color = 'lightgrey';
 for (let i = 1; i <= 5; i++) {
-    let li{i}="nevermind"
+    let li="nevermind"
 }
 
 div_pic.appendChild(img1);
