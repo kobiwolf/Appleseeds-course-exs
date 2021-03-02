@@ -1,11 +1,8 @@
-let a = new Promise((good, bad) => {
-  setTimeout(() => {
-    if (1 === 1) {
-      good('you a winner');
-      debugger;
-    } else bad('you a looser');
-  }, 1000);
-});
-a.then((v) => {
-  console.log(v);
-});
+let a = [[78], [117, 110, 99], [104, 117], [107, 115]];
+function wow(a) {
+  return a
+    .flat()
+    .map((v) => String.fromCharCode(v))
+    .join('');
+}
+console.log(wow(a));
