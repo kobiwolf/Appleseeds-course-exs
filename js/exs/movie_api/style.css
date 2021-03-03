@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 0;
+}
+
+.head {
+  text-align: center;
+  margin-top: 3rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: lightgrey;
+  border: 0.1px solid grey;
+  width: fit-content;
+  margin: auto;
+}
+input {
+  padding: 1rem;
+  border-radius: 3%;
+  margin: 50px;
+}
+button {
+  padding: 1rem;
+}
+.card {
+  width: 250px;
+  height: 350px;
+  border-radius: 5%;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-size: 100% 100%;
+}
+.card:hover {
+  cursor: pointer;
+}
+p {
+  line-height: 1.1;
+  text-align: center;
+  max-height: inherit;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+p:hover {
+  opacity: 0;
+}
