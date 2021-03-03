@@ -3,7 +3,8 @@ const root = ` http://www.omdbapi.com/?apikey=${myApiKey}&r=json&t=`;
 const get = (type) => document.querySelector(type);
 const create = (type) => document.createElement(type);
 const cardDiv = get('.cardDiv');
-const but = get('button');
+const but = get('.button');
+const butListen = get('.listenBut');
 let inputEl = get('input');
 inputEl.focus();
 

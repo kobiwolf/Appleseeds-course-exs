@@ -21,4 +21,3 @@ function child1() {
   });
 }
 console.log(dad1());
-// let b = a1();
