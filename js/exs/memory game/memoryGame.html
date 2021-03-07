@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./memoryGame.css" />
+    <title>Memory Game</title>
+  </head>
+  <body>
+    <div class="welcome">
+      <h1>Welcome To the memory game!!</h1>
+      <div class="butsDiv">
+        <h2>Difficulty:</h2>
+        <button class="Easy">Easy</button>
+        <button class="Medium">Medium</button>
+        <button class="Hard">Hard</button>
+      </div>
+    </div>
+    <div class="winner hidden">
+      <h1>well done you won!</h1>
+      <button class="newgame">New Game</button>
+    </div>
+    <div class="game hidden">
+      <div class="timer">
+        <div class="container">
+          <p class="digit" id="hour">00</p>
+          :
+          <p class="digit" id="minutes">00</p>
+          :
+          <p class="digit" id="seconds">00</p>
+        </div>
+      </div>
+      <h2 class="guess">wrong attempts: <span>0</span></h2>
+    </div>
+    <div class="board hidden"></div>
+    <script src="./memoryGame.js"></script>
+  </body>
+</html>
