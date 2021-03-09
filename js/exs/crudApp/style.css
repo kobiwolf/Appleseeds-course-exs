@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+body {
+  min-height: 93vh;
+  width: 100vw;
+  background-image: url(./img/board.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+h2 {
+  font-size: 1.4rem;
+}
+h3 {
+  font-size: 1.2rem;
+}
+p {
+  font-size: 1rem;
+}
+h2 {
+  font-size: 0.8rem;
+}
+.head {
+  color: white;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.headRight {
+  display: flex;
+}
+.headRight > button {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  margin: 1rem;
+}
+.notes {
+  width: fit-content;
+  max-width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding-bottom: 2.5rem;
+}
+p {
+  max-width: 95%;
+  text-align: center;
+  word-break: break-all;
+  margin: 0.5rem 0 0.5rem 0.1rem;
+}
+
+.note {
+  padding: 0.2rem;
+  min-width: 10rem;
+  max-width: 15rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url(./img/note.jpg);
+  background-size: 100% 100%;
+}
+.note button {
+  margin-top: 0.3rem;
+  margin-left: 0.5rem;
+  padding: 0.3rem;
+}
+.butsDiv {
+  margin-top: 10rem;
+}
+.complete {
+  color: red;
+}
+.done {
+  color: green;
+}
+.hidden {
+  display: none;
+}
+
+@media screen and(max-width:450px) {
+  .notes {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  :root {
+    font-size: 1px;
+  }
+}
