@@ -10,18 +10,6 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-h2 {
-  font-size: 1.4rem;
-}
-h3 {
-  font-size: 1.2rem;
-}
-p {
-  font-size: 1rem;
-}
-h2 {
-  font-size: 0.8rem;
-}
 .head {
   color: white;
   margin-top: 4rem;
@@ -87,11 +75,14 @@ p {
   display: none;
 }
 
-@media screen and(max-width:450px) {
+@media screen and (max-width: 450px) {
   .notes {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   :root {
-    font-size: 1px;
+    font-size: 10px;
+  }
+  .head {
+    flex-direction: column;
   }
 }

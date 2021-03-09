@@ -6,13 +6,12 @@ const notesDiv = getEl('.notes');
 const sortDoneBut = getEl('.sortDone');
 const clearBut = getEl('.clear');
 let notesList = [];
-
 let myStorage = {};
 let counter = 0;
+
 function printOld(arrOfTask, notesList) {
   for (let i = 0; i < arrOfTask.length; i++) {
     const oldTask = arrOfTask[i];
-    console.log(oldTask.done);
     notesList.push(oldTask);
     const newTask = create('div');
     newTask.classList.add(`note`);
@@ -43,7 +42,6 @@ function printOld(arrOfTask, notesList) {
 }
 if (window.localStorage.length) {
   myStorage = JSON.parse(window.localStorage.data);
-  console.log(myStorage);
   printOld(myStorage, notesList);
   counter = myStorage[myStorage.length - 1].id;
 }
