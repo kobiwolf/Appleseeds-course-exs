@@ -1,11 +1,12 @@
 const list = [];
+let a = 5;
 function addItem(id, name, isCompleted = false) {
   list.push({ id: id, name: name, isCompleted: isCompleted });
 }
 function deleteItem(id) {
   const index = findById(id);
   list.splice(index, 1);
-  return;
+  return list;
 }
 function findById(id) {
   let index;
@@ -14,17 +15,9 @@ function findById(id) {
   });
   return index;
 }
-function done(id) {
-  let info = findById(id);
-  list[info[1]].isCompleted = true;
-}
 function toggle(id) {
   const index = findById(id);
   list[index].isCompleted = !list[index].isCompleted;
-}
-function unDone(id) {
-  let info = findById(id);
-  list[info[1]].isCompleted = false;
 }
 function getAll() {
   list.sort((b, a) => {
@@ -34,10 +27,11 @@ function getAll() {
   return list;
 }
 
-addItem(1, 'kobi');
-addItem(2, 'judi');
-addItem(3, 'uda');
-toggle(2);
-toggle(1);
-getAll();
-console.log(list);
+// addItem(1, 'kobi');
+// addItem(2, 'judi');
+// addItem(3, 'uda');
+// toggle(2);
+// getAll();
+// console.log(list);
+
+module.exports = [list, addItem, deleteItem, findById, toggle, getAll];

@@ -11,5 +11,8 @@
   "devDependencies": {
     "eslint": "^7.19.0",
     "eslint-plugin-react": "^7.22.0"
+  },
+  "dependencies": {
+    "chart.js": "^2.9.4"
   }
 }
