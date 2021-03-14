@@ -1,0 +1,1 @@
+in order to check the result of index.js file should be insert to 'tamplet/src'
