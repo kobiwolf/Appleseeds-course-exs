@@ -1,13 +1,8 @@
 import React from 'react';
-import Button from './componets/Button/Button';
+import Card from './componets/Card/Card';
 
 function App() {
-  return (
-    <div>
-      <Button text="important" class="bold" />
-      <Button text="not important" />
-    </div>
-  );
+  return <div></div>;
 }
 
 export default App;
