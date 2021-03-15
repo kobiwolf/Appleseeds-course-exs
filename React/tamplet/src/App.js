@@ -1,8 +1,8 @@
 import React from 'react';
-import Card from './componets/Card/Card';
 
-function App() {
-  return <div></div>;
+class App extends React.Component {
+  render() {
+    return <div>wow</div>;
+  }
 }
-
 export default App;
