@@ -1,8 +1,8 @@
 import React from 'react';
 class App extends React.Component {
-  state = { style: 'red' };
+  state = { time: 0 };
   render() {
-    return <div></div>;
+    return <div className="container"></div>;
   }
 }
 export default App;
