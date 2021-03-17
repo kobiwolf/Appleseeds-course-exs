@@ -8,8 +8,8 @@ class App extends React.Component {
   }
   componentDidUpdate() {
     setTimeout(() => {
-      this.setState((preStyle) => {
-        switch (preStyle.style) {
+      this.setState((preState) => {
+        switch (preState.style) {
           case 'blue':
             return { style: 'green' };
           case 'green':
