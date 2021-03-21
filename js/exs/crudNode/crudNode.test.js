@@ -14,15 +14,15 @@ test('check findById', () => {
   let index = findById(3);
   expect(index).toBe(1);
 });
-test('check toggle from true to false', () => {
-  add(1, 'kobi', true);
-  toggle(1);
-  expect(list[0].isCompleted).toEqual(false);
-});
 test('check toggle from false to true ', () => {
   add(1, 'kobi', false);
   toggle(1);
   expect(list[0].isCompleted).toEqual(true);
+});
+test('check toggle from true to false', () => {
+  add(1, 'kobi', true);
+  toggle(1);
+  expect(list[0].isCompleted).toEqual(false);
 });
 test('check getall ', () => {
   add(1, 'kobi', true);

@@ -1,6 +1,8 @@
 const list = [];
 let a = 5;
 function addItem(id, name, isCompleted = false) {
+  console.log(a);
+  a++;
   list.push({ id: id, name: name, isCompleted: isCompleted });
 }
 function deleteItem(id) {
@@ -30,7 +32,8 @@ function getAll() {
 // addItem(1, 'kobi');
 // addItem(2, 'judi');
 // addItem(3, 'uda');
-// toggle(2);
+// toggle(1);
+// toggle(1);
 // getAll();
 // console.log(list);
 
