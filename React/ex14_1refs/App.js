@@ -6,17 +6,16 @@ class App extends React.Component {
     this.state = { filterData: [], originalData: [] };
     this.refss = React.createRef();
   }
-  onclick = () => {
-    console.log(this.refss.current.value);
-  };
-  componentDidMount() {
+  componentDidMount = () => {
     this.refss.current.focus();
-  }
+  };
   render() {
     return (
       <>
-        <textarea ref={this.refss} />
-        <button onClick={this.onclick}>copy</button>
+        <form>
+          <h1>hello!</h1>
+          <input type="text" ref={this.refss}></input>
+        </form>
       </>
     );
   }
