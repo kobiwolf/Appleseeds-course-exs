@@ -1,14 +1,16 @@
 import React from 'react';
-import Text from './componets/text';
-const App = (props) => {
+import TodoHooks from './componets/todoHooks';
+const data = [
+  { name: 'CSS', completed: true },
+  { name: 'JavaScript', completed: true },
+  { name: 'Learn React', completed: false },
+  { name: 'Learn mongoDB', completed: false },
+  { name: 'Learn Node JS', completed: false },
+];
+const App = () => {
   return (
     <>
-      <Text
-        length="20"
-        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas totam, amet dolores,
-           enim nesciunt magnam quibusdam et a sit sequi accusamus! Reprehenderit sapiente natus totam laborum,
-           sunt molestiae ipsa animi laudantium nesciunt, non neque aliquam in dolor asperiores delectus error!"
-      />
+      <TodoHooks data={data} />
     </>
   );
 };
