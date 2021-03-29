@@ -3,11 +3,12 @@ import React, { useState } from 'react';
 const TodoHooks = ({ data }) => {
   const [items, setItem] = useState(data);
   async function buttonClick(name) {
-    const match = items.findIndex((item) => item.name === name);
     setItem([
-      ...items.slice(0, match),
-      { name: items[match].name, completed: !items[match].completed },
-      ...items.slice(match + 1),
+      ...items.map((item, i) => {
+        if (item.name === name) {
+          return { name: items[i].name, completed: !items[i].completed };
+        } else return item;
+      }),
     ]);
   }
   function displayItem(item) {

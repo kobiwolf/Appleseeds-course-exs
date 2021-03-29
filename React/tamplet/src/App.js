@@ -1,16 +1,46 @@
-import React from 'react';
-import TodoHooks from './componets/todoHooks';
-const data = [
-  { name: 'CSS', completed: true },
-  { name: 'JavaScript', completed: true },
-  { name: 'Learn React', completed: false },
-  { name: 'Learn mongoDB', completed: false },
-  { name: 'Learn Node JS', completed: false },
+import React, { useState } from 'react';
+import CheckBox from './componets/CheckBox';
+
+let dataArr = ['one', 'two', 'three', 'four', 'five'];
+let startData = [
+  ...dataArr.map((text, i) => {
+    return { id: i, title: text, finish: false };
+  }),
 ];
 const App = () => {
+  const [data, setData] = useState(startData);
+  console.log(startData);
+  const updateFinish = (name) => {
+    const argu = data.map((cube) => {
+      if (cube.title === name)
+        return { title: cube.title, finish: !cube.finish };
+      return cube;
+    });
+    setData(argu);
+  };
+  const deleteChecked = () => {
+    const done = data.filter((item) => {
+      if (!item.finish) return item;
+    });
+    setData(done);
+  };
+  const resetButton = () => {
+    setData(startData);
+  };
   return (
     <>
-      <TodoHooks data={data} />
+      <ul>
+        {data.map((cube) => (
+          <CheckBox
+            key={cube.id}
+            text={cube.title}
+            updateFinish={updateFinish}
+            finish={cube.finish}
+          />
+        ))}
+      </ul>
+      <button onClick={deleteChecked}>delete</button>
+      <button onClick={resetButton}>reset</button>
     </>
   );
 };
