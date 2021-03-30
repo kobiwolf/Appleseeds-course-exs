@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import CheckBox from './componets/CheckBox';
 
 let dataArr = ['one', 'two', 'three', 'four', 'five'];
@@ -45,3 +45,22 @@ const App = () => {
   );
 };
 export default App;
+
+function window() {
+  const [state, setState] = useState(0);
+  console.time('simple');
+  for (let i = 0; i < 10000; i++) {
+    console.log(state);
+  }
+  console.timeEnd('simple');
+
+  console.time('effect');
+  for (let i = 0; i < 10000; i++) {
+    useEffect(() => {
+      console.log(state);
+    });
+  }
+  console.timeEnd('effect');
+
+  setState(state + 1);
+}
