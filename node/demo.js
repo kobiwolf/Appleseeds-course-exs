@@ -1,22 +1,13 @@
-const yargs = require('yargs');
+const app = require('express')();
 
-yargs.command({
-  command: 'add',
-  describe: 'adding shit',
-  builder: {
-    title: {
-      describe: 'some title',
-      type: 'string',
-      demandOption: true,
-    },
-    body: {
-      describe: 'good body',
-      type: 'string',
-    },
-  },
-  handler: (argv) => {
-    console.log('adding', argv.title, argv.body);
-  },
+app.get('/', (req, res) => {
+  res.send('home');
+  // res.send('console.log("good")');
 });
-
-yargs.parse();
+app.get('/wow', (req, res) => {
+  res.send('wow page');
+  console.log('good');
+});
+app.listen(3000, () => {
+  console.log('we are up');
+});
