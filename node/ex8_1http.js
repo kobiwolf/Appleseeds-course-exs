@@ -1,10 +1,12 @@
-const http = require('http');
-const url = 'https://api.fbi.gov/wanted/v1/list';
+const https = require('https');
+const url = 'https://cat-fact.herokuapp.com/facts';
 
-const fbiList = http.request(url, (error, res) => {
+const fbiList = https.request(url, (res) => {
   let count = 0;
+  let full;
   res.on('data', (data) => {
-    console.log(data);
+    // console.log(data.toString());
+    full += data.toString();
     count++;
   });
   res.on('end', () => {
