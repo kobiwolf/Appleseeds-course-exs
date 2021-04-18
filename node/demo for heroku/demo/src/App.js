@@ -1,13 +1,15 @@
-import logo from './logo.svg';
 import { useState } from 'react';
 import './App.css';
 import axios from 'axios';
 
+const path = '/api/joke';
 function App() {
   const [joke, setJoke] = useState('');
-  const getjoke = async () => {
-    const data = await axios.get('http://localhost:3001/');
-    setJoke(data.data.value);
+  const getjoke = () => {
+    axios.get(path).then((respone) => setJoke(respone.data.value));
+    // const data = await axios.get(path);
+    // console.log(data);
+    // setJoke(data.data.value);
   };
   return (
     <div className="App">

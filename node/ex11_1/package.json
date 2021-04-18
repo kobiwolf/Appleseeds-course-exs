@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run start --prefix bank",
-    "server": "nodemon ./server/app.js"
+    "start": "node ./server/app.js",
+    "client": "npm run start --prefix bank"
   },
   "author": "",
   "license": "ISC",

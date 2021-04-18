@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import axios from 'axios';
 
-const path = '/api/users';
+const path = 'http://localhost:3001/api/users/';
 
 function App() {
   const [users, setUsers] = useState(null);
