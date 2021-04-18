@@ -1,8 +1,10 @@
 const e = require('express');
 const fs = require('fs');
-const pathData = './users.json';
+const path = __dirname;
+const pathData = `${path}/users.json`;
 
 const getData = () => {
+  console.log(path);
   const data = fs.readFileSync(pathData).toString();
   return JSON.parse(data);
 };

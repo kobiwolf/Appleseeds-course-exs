@@ -17,7 +17,7 @@ const {
 const app = express();
 app.use(express.json());
 app.use(cors());
-app.set('port', 3001);
+const port = process.env.PORT || 3001;
 
 // get all users
 app.get(endPoint, (req, res) => {
@@ -124,6 +124,6 @@ app.delete(`${endPoint}/:id`, (req, res) => {
   }
 });
 
-app.listen(app.get('port'), (server) => {
-  console.info(`Server listen on port ${app.get('port')}`);
+app.listen(port, (server) => {
+  console.info(`Server listen on port ${port}`);
 });
