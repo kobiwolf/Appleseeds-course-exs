@@ -1,0 +1,12 @@
+{
+  "name": "ex11_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start --prefix bank",
+    "server": "nodemon ./server/app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

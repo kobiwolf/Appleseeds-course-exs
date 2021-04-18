@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 const endPoint = '/api/users';
 
 const {
@@ -17,6 +18,7 @@ const {
 const app = express();
 app.use(express.json());
 app.use(cors());
+app.use(express.static(path.join(__dirname, 'build')));
 const port = process.env.PORT || 3001;
 
 // get all users
