@@ -13,3 +13,9 @@ const files = fs.readdirSync(
 //5
 const try1 = fs.realpathSync('demo.js');
 console.log(try1);
+
+// const respone = await usersC.findOne({
+//     _id: ObjectID('607ea00cd009b91618ef2337'),
+//   });
+//   const poster = await postC.findOne({ _id: ObjectID(respone.posts[0]) });
+//   console.log(typeof poster);
