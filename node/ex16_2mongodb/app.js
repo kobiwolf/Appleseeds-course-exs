@@ -7,6 +7,7 @@ MongoClient.connect(url, { useNewUrlParser: true }, async (error, client) => {
   const usersC = db.collection('users');
   const commentC = db.collection('comments');
   const postC = db.collection('posts');
+
   //for later
 
   // db.runCommand({
